@@ -38,20 +38,19 @@ const Login = () => {
 
     return (
         <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <div style={{ width: '40%' }}> {/* This div wraps the form and sets its width */}
+            <div style={{ width: '20%' }}> {/* This div wraps the form and sets its width */}
                 <h2 className="text-center">Login</h2>
                 <div className="form-group">
-                    <label>Email</label>
                     <input
                         type="email"
                         className="form-control"
                         placeholder="Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        style={{ marginBottom: '20px' }}
                     />
                 </div>
                 <div className="form-group">
-                    <label>Password</label>
                     <input
                         type="password"
                         className="form-control"
